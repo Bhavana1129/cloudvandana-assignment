@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IMAGE SLIDER</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 30px;
+      background-color: #f5f5f5;
+    }
+
+    h2 {
+      font-family: 'Trebuchet MS', sans-serif;
+      font-size: 36px;
+      background: linear-gradient(to right, #007bff, #00c6ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 30px;
+    }
+
+    #slider {
+      width: 800px;
+      height: 500px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      margin-bottom: 20px;
+      opacity: 1;
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    button {
+      padding: 12px 24px;
+      margin: 0 10px;
+      font-size: 18px;
+      cursor: pointer;
+      border: none;
+      border-radius: 8px;
+      background-color: #007bff;
+      color: white;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>IMAGE SLIDER</h2>
+  <img id="slider" src="" alt="Image Slider">
+  <div>
+    <button onclick="prevImage()">Previous</button>
+    <button onclick="nextImage()">Next</button>
+  </div>
+
+  <script>
+    const images = ["img1.jpg", "img2.jpg", "img3.jpg", "img4.jpg", "img5.jpg"];
+    let currentIndex = 0;
+    const slider = document.getElementById("slider");
+
+    function showImage(index) {
+      slider.style.opacity = 0;
+      setTimeout(() => {
+        slider.src = images[index];
+        slider.style.opacity = 1;
+      }, 300);
+    }
+
+    function nextImage() {
+      currentIndex = (currentIndex + 1) % images.length;
+      showImage(currentIndex);
+    }
+
+    function prevImage() {
+      currentIndex = (currentIndex - 1 + images.length) % images.length;
+      showImage(currentIndex);
+    }
+
+    window.onload = () => {
+      showImage(currentIndex);
+    };
+  </script>
+
+</body>
+</html>
