@@ -18,7 +18,7 @@ This repository contains solutions to the coding assessment for the **Associate 
 - Social media icons
 - Hover effects
 
-📂 [`profile_card/index.html`](profile_card/index.html)
+📂 ['index.html`](index.html)
 
 ---
 
