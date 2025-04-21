@@ -27,7 +27,7 @@ This repository contains solutions to the coding assessment for the **Associate 
 - Checks if they are anagrams
 - Uses sorting and comparison
 
-📂 [`anagram/AnagramCheck.java`](anagram/AnagramCheck.java)
+📂 ['AnagramCheck.java`](AnagramCheck.java)
 
 ---
 
@@ -36,7 +36,7 @@ This repository contains solutions to the coding assessment for the **Associate 
 - Stores multiple employees in a list
 - Displays details using `displayDetails()` method
 
-📂 [`employee/EmployeeManagement.java`](employee/EmployeeManagement.java)
+📂 [`EmployeeManagementSystem.java`](EmployeeManagementSystem.java)
 
 ---
 
@@ -45,7 +45,7 @@ This repository contains solutions to the coding assessment for the **Associate 
 - Manipulates DOM using JavaScript
 - User-friendly interface
 
-📂 [`todo/index.html`](todo/index.html)
+📂 [`Todo.html`](Todo.html)
 
 ---
 
@@ -54,7 +54,7 @@ This repository contains solutions to the coding assessment for the **Associate 
 - Navigation via "Next" and "Previous" buttons
 - Uses a JS array to store image paths
 
-📂 [`slider/index.html`](slider/index.html)
+📂 [`Image.html`](Image.html)
 
 ---
 
